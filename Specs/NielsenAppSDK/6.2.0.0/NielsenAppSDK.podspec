@@ -8,8 +8,9 @@ Pod::Spec.new do |s|
     s.platform            = :ios, '8.0'
     s.name                = 'NielsenAppSDK'
     s.preserve_paths      = 'LICENSE.txt'
-    s.source              = { :http => 'https://raw.githubusercontent.com/nielsendigitalsdk/nielsenappsdkextension-ios/master/iOS/Global/NielsenAppSDK-6.2.0.0.zip' }
-    s.summary             = 'Nielsen App SDK.'
+    s.source_files        = 'NielsenAppApi.h', 'NielsenEvenTracker.h'
+    s.source              = { :http => 'https://raw.githubusercontent.com/NielsenDigitalSDK/nielsenappsdkextension-ios/master/iOS//NielsenAppSDK-6.2.0.0.zip' }
+    s.summary             = 'Nielsen AppSDK Extension for Global market'
     s.vendored_frameworks = 'NielsenAppApi.framework'
     s.version             = '6.2.0.0'
 end
